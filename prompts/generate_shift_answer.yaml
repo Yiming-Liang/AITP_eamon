@@ -1,0 +1,21 @@
+  prompt_format: 
+  - |
+    Your task is to generate an answer based on the given question. Use the background information provided in the text to assist in formulating a relevant and detailed answer. Follow these guidelines:
+
+    1. Answer Guidelines:
+      - Ensure the answer is closely related to the main points or themes mentioned in the question.
+      - Utilize the text content to provide a comprehensive and accurate answer.
+      - Ensure proper formatting and readability, including the correct rendering of any LaTeX or mathematical symbols.
+      - Ensure that the answer provides a complete solution or explanation, with clear and detailed steps.
+      - Use JSON format with the key "answer" for easy extraction and processing.    
+
+    Text:
+    {}
+
+    Question: 
+    {}
+
+    Output format example:
+    {{
+      "answer": "Generated answer content"
+    }}

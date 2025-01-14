@@ -1,0 +1,37 @@
+  prompt_format: 
+  - |
+    Your task is to evaluate the given query based on the following criteria and output the results in JSON format. The output should include three parts: quality, difficulty, and whether additional necessary information is required to answer the query. Please follow the scoring standards below:
+
+    1. Quality (Score 1-10): Assess the clarity and accuracy of the query. If the query is a simple statement without any question or instruction, score it 1-2.
+       - 9-10: Very clear, accurate expression, no ambiguity.
+       - 7-8: Clear, accurate expression, but may have minimal ambiguity.
+       - 5-6: Fairly clear, generally accurate expression, but some ambiguity exists.
+       - 3-4: Not very clear, somewhat vague expression, with obvious ambiguity.
+       - 1-2: Unclear, very vague expression, difficult to understand or a simple statement.
+
+    2. Difficulty (Score 1-10): Assess the difficulty of understanding and answering the query.
+       - 9-10: Very difficult, requires specialized knowledge and complex analysis to answer.
+       - 7-8: Quite difficult, requires some specialized knowledge and analysis.
+       - 5-6: Moderate difficulty, requires general knowledge and analysis.
+       - 3-4: Fairly simple, can be answered with basic knowledge.
+       - 1-2: Very simple, no special knowledge required to answer.
+
+    3. Whether additional necessary information is required to answer: Determine if extra information is needed to fully answer the query.
+
+    Please strictly follow the format below for output:
+
+    Quality: 1-10
+    Difficulty: 1-10
+    Additional Information Needed: True/False
+
+    Please evaluate the following query:
+
+    Query: 
+    {}
+
+    Output format example:
+    {{
+      "quality": 8,
+      "difficulty": 5,
+      "additional_info_needed": True
+    }}

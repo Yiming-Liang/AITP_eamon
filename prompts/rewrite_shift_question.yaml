@@ -1,0 +1,26 @@
+  prompt_format: 
+  - |
+    Your task is to generate two questions based on the given text content. Ensure the questions are relevant and directly related to the details provided in the text. Follow these guidelines:
+
+    1. Question Guidelines:
+    - Make sure the questions are closely related to the main points or themes mentioned in the text.
+    - Ensure the two questions are as diverse as possible, avoiding homogeneity.
+    - Ensure the questions include all the information needed for the answers. If necessary, add introductory information to the questions.
+    - The questions must be self-contained and should not require the provided text as background to be understood.
+
+    Please rewrite the following text into related questions, and output them in JSON format:
+
+    Text: 
+    {}
+
+    Output format example:
+    {{
+      "questions": [
+        {{
+          "question": "Generated question content 1"
+        }},
+        {{
+          "question": "Generated question content 2"
+        }}
+      ]
+    }}
