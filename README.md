@@ -5,20 +5,24 @@ This repository contains codes and scripts for the [AITP paper](https://arxiv.or
 Instruction tuning enhances large language models (LLMs) to follow human instructions across diverse tasks, relying on high-quality datasets to guide behavior. However, these datasets, whether manually curated or synthetically generated, are often narrowly focused and misaligned with the broad distributions captured during pre-training, limiting LLM generalization and effective use of pre-trained knowledge. We propose *Aligning Instruction Tuning with Pre-training* (AITP), a method that bridges this gap by identifying coverage shortfalls in instruction-tuning datasets and rewriting underrepresented pre-training data into high-quality instruction-response pairs. This approach enriches dataset diversity while preserving task-specific objectives.
 
 ![The Pipeline of AITP. ](./pictures/AITPpipeline.png)
+<center>The Pipeline of AITP.</center>
 
 ## Background
 
-Humans do not have an explicit SFT stage; instead, they learn the pattern of instruction following through repetition and low-resource, weakly supervised instruction data, actively self-align in various environments.
 
-The Self-Instruct, Dromedary, and SALMON settings not only aim to address the scarcity of labeled resources but also hold significant importance in exploring how active, human-like alignment can emerge.
-
-Self-Instruct, Dromedary, SALMON, and now I-SHEEP!
 
 ## Usage
 This is an unoptimized version of the code, which is the same as what we used during the actual run.
 
+1. Generate the difference set
+```
+cd ./AITP
+sh scripts/difference_general_GPU_bge_batch_state.sh
+```
+2. Rewrite raw text into instruction-response pairs
 
 
+3. Training
 
 ## citation
 ```
