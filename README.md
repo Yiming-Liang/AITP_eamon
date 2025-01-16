@@ -7,9 +7,6 @@ Instruction tuning enhances large language models (LLMs) to follow human instruc
 ![The Pipeline of AITP. ](./pictures/AITPpipeline.png)
 <center>The Pipeline of AITP.</center>
 
-## Background
-
-
 
 ## Usage
 This is an unoptimized version of the code, which is the same as what we used during the actual run.
