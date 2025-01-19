@@ -30,6 +30,10 @@ sh scripts/difference_general_GPU_bge_batch_state.sh
 
 3. **Training**
 
+   For training the model, we utilize the open-source [Llama Factory](https://github.com/hiyouga/LLaMA-Factory) framework. This framework provides the necessary tools for fine-tuning the model. The specific training parameters for each model are detailed in the paper. To use the framework, follow the setup and execution instructions provided in the Llama Factory repository. 
+
+   The training process will leverage the instruction-response pairs generated in the previous step, and fine-tune the model according to the predefined training parameters to enhance performance in alignment with the pre-training data.
+
 ## citation
 ```
 @inproceedings{Liang2024isheep,
