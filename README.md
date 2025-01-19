@@ -11,15 +11,24 @@ Instruction tuning enhances large language models (LLMs) to follow human instruc
 ## Usage
 This is an unoptimized version of the code, which is the same as what we used during the actual run.
 
-1. Generate the difference set
+1. **Generate the difference set**
 ```
 cd ./AITP
 sh scripts/difference_general_GPU_bge_batch_state.sh
 ```
-2. Rewrite raw text into instruction-response pairs
+
+2. **Rewrite raw text into instruction-response pairs**
+
+   We leverage the [KOR-Bench](https://github.com/KOR-Bench/KOR-Bench) codebase to rewrite raw text into instruction-response pairs. To do so, place the YAML files from the `AITP/prompts` directory into the `KOR-Bench/config/prompt` directory. You will need to follow the KOR-Bench usage instructions for data generation. Specifically, we provide three YAML files that you will use in sequence for distillation:
+   
+   - `generate_shift_answer.yaml`
+   - `score_shift.yaml`
+   - `rewrite_shift_question.yaml`
+
+   These YAML files will guide the process of converting raw text into high-quality instruction-response pairs, enriching the dataset to better align instruction tuning with pre-training data.
 
 
-3. Training
+3. **Training**
 
 ## citation
 ```
