@@ -36,10 +36,10 @@ sh scripts/difference_general_GPU_bge_batch_state.sh
 
 ## citation
 ```
-@inproceedings{Liang2024isheep,
-  title  = {I-SHEEP: Self-Alignment of LLM from Scratch through an Iterative Self-Enhancement Paradigm},
-  author = {Yiming Liang and Ge Zhang and Xingwei Qu and Tianyu Zheng and Jiawei Guo and Xeron Du and Zhenzhu Yang and Jiaheng Liu and Chenghua Lin and Lei Ma and Wenhao Huang and Jiajun Zhang},
-  year   = {2024},
-  url    = {https://openreview.net/forum?id=y8Ng9dkuK9&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DAAAI.org%2F2025%2FAI_Alignment_Track%2FAuthors%23your-submissions)}
+@article{liang2025aligning,
+  title   = {Aligning Instruction Tuning with Pre-training},
+  author  = {Yiming Liang and Tianyu Zheng and Xinrun Du and Ge Zhang and Xingwei Qu and Xiang Yue and Chujie Zheng and Jiaheng Liu and Lei Ma and Wenhu Chen and Guoyin Wang and Zhaoxiang Zhang and Wenhao Huang and Jiajun Zhang},
+  year    = {2025},
+  journal = {arXiv preprint arXiv: 2501.09368}
 }
 ```
